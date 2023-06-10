@@ -49,7 +49,7 @@ const [doings, setdoings] = useState([
     return (
       <div>
         <h1 className="text-center font-bold text-4xl mb-8">What I Do</h1>
-        <div className="grid doings-grid gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {doings.map((doin) => (
             <Card
               img={doin.image}

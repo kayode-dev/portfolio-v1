@@ -27,38 +27,65 @@ const NavBar: any = () => {
     <>
       <BrowserRouter>
         <nav className="h-32 w-full flex justify-between font-medium text-base">
-          <div className="flex flex-row w-1/2  justify-around items-center p-2">
-            <div
-              className={
-                "h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center  hover:backdrop-brightness-" +
-                backdrop_brightness
-              }
+          <div className='flex flex-col md:flex-row'>
+            <button
+              data-collapse-toggle="navbar-default"
+              type="button"
+              className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-default"
+              aria-expanded="false"
             >
-              <Link to="/">Home</Link>
-            </div>
+              <span className="sr-only">Open main menu</span>
+              <svg
+                className="w-6 h-6"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
             <div
-              className={
-                "h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center  hover:backdrop-brightness-" +
-                backdrop_brightness
-              }
+              className="hidden flex-col w-full  justify-between items-center p-2 md:flex md:flex-row md:justify-around"
+              id="navbar-default"
             >
-              <Link to="/rando">Resume</Link>
-            </div>
-            <div
-              className={
-                "h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center  hover:backdrop-brightness-" +
-                backdrop_brightness
-              }
-            >
-              <Link to=".">Articles</Link>
-            </div>
-            <div
-              className={
-                "h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center  hover:backdrop-brightness-" +
-                backdrop_brightness
-              }
-            >
-              <Link to=".">Contact Me</Link>
+              <div
+                className={
+                  "h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center  hover:backdrop-brightness-" +
+                  backdrop_brightness
+                }
+              >
+                <Link to="/">Home</Link>
+              </div>
+              <div
+                className={
+                  "h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center  hover:backdrop-brightness-" +
+                  backdrop_brightness
+                }
+              >
+                <Link to="/rando">Resume</Link>
+              </div>
+              <div
+                className={
+                  "h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center  hover:backdrop-brightness-" +
+                  backdrop_brightness
+                }
+              >
+                <Link to=".">Articles</Link>
+              </div>
+              <div
+                className={
+                  "h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center  hover:backdrop-brightness-" +
+                  backdrop_brightness
+                }
+              >
+                <Link to=".">Contact Me</Link>
+              </div>
             </div>
           </div>
           <button
@@ -73,7 +100,6 @@ const NavBar: any = () => {
         </nav>
 
         <Routes>
-          <Route path="/" element={<NavBar />} />
           <Route index element={<Home />} />
           <Route path="rando" element={<Rando />} />
         </Routes>
