@@ -27,65 +27,50 @@ const NavBar: any = () => {
     <>
       <BrowserRouter>
         <nav className="h-32 w-full flex justify-between font-medium text-base">
-          <div className='flex flex-col md:flex-row'>
-            <button
-              data-collapse-toggle="navbar-default"
-              type="button"
-              className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-default"
-              aria-expanded="false"
-            >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="w-6 h-6"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            className=" w-14 h-14 justify-center flex items-center p-2 ml-3 my-auto rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span className="material-symbols-outlined">menu</span>
+          </button>
+          <div
+            className="hidden flex-col min-w-full left-0 absolute mt-32 min-h-full  dark:bg-neutral-900 justify-center items-center p-2 md:min-h-min md:dark:bg-inherit md:relative md:mt-0 md:flex md:flex-row md:w-1/2 md:max-w-fit md:justify-around"
+            id="navbar-default"
+          >
             <div
-              className="hidden flex-col w-full  justify-between items-center p-2 md:flex md:flex-row md:justify-around"
-              id="navbar-default"
+              className={
+                "h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center  hover:backdrop-brightness-" +
+                backdrop_brightness
+              }
             >
-              <div
-                className={
-                  "h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center  hover:backdrop-brightness-" +
-                  backdrop_brightness
-                }
-              >
-                <Link to="/">Home</Link>
-              </div>
-              <div
-                className={
-                  "h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center  hover:backdrop-brightness-" +
-                  backdrop_brightness
-                }
-              >
-                <Link to="/rando">Resume</Link>
-              </div>
-              <div
-                className={
-                  "h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center  hover:backdrop-brightness-" +
-                  backdrop_brightness
-                }
-              >
-                <Link to=".">Articles</Link>
-              </div>
-              <div
-                className={
-                  "h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center  hover:backdrop-brightness-" +
-                  backdrop_brightness
-                }
-              >
-                <Link to=".">Contact Me</Link>
-              </div>
+              <Link to="/">Home</Link>
+            </div>
+            <div
+              className={
+                "h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center  hover:backdrop-brightness-" +
+                backdrop_brightness
+              }
+            >
+              <Link to="/rando">Resume</Link>
+            </div>
+            <div
+              className={
+                "h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center  hover:backdrop-brightness-" +
+                backdrop_brightness
+              }
+            >
+              <Link to=".">Articles</Link>
+            </div>
+            <div
+              className={
+                "h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center  hover:backdrop-brightness-" +
+                backdrop_brightness
+              }
+            >
+              <Link to=".">Contact Me</Link>
             </div>
           </div>
           <button
