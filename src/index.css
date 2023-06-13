@@ -28,3 +28,12 @@ code {
 .doings{
   box-shadow: 0 2rem 4rem rgba(0,0,0,.3);
 }
+.nav-md-width{
+  width: 100%;
+}
+
+@media screen and (max-width = 768px) {
+ .nav-md-width{
+  max-width: 60%;
+ } 
+}

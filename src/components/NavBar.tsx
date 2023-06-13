@@ -15,7 +15,7 @@ const NavBar: any = () => {
     themeicon = "light_mode";
     backdrop_brightness = 150;
   } else {
-    setTheme("light");
+    setTheme("light"); 
     themeicon = "dark_mode";
     backdrop_brightness = 50;
   }
@@ -37,7 +37,7 @@ const NavBar: any = () => {
             <span className="material-symbols-outlined">menu</span>
           </button>
           <div
-            className="hidden flex-col min-w-full left-0 absolute mt-32 min-h-full  dark:bg-neutral-900 justify-center items-center p-2 md:min-h-min md:dark:bg-inherit md:relative md:mt-0 md:flex md:flex-row md:w-1/2 md:max-w-fit md:justify-around"
+            className="nav-md-width hidden flex-col  left-0 mt-32 min-h-full fixed  dark:bg-neutral-900 justify-center items-center p-2 md:min-h-min md:dark:bg-inherit md:static md:mt-0 md:flex md:flex-row md:w-1/2  md:justify-around"
             id="navbar-default"
           >
             <div
