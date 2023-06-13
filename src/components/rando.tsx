@@ -1,7 +1,12 @@
 import React from "react";
+import Resume from "../documents/resume.pdf";
 
 const Rando = () =>{
-    return(<h1>this is rando</h1>);
+
+
+    return (<>
+        <iframe title='resume' src={`${Resume}#view=fitH`} className="min-h-screen min-w-full"/>
+        </>)
 
 }
 

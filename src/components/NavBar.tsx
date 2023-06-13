@@ -37,7 +37,7 @@ const NavBar: any = () => {
             <span className="material-symbols-outlined">menu</span>
           </button>
           <div
-            className="nav-md-width hidden flex-col  left-0 mt-32 min-h-full fixed  dark:bg-neutral-900 justify-center items-center p-2 md:min-h-min md:dark:bg-inherit md:static md:mt-0 md:flex md:flex-row md:w-1/2  md:justify-around"
+            className="w-3/5 hidden flex-col left-0 mt-32 min-h-full fixed z-20 bg-gray-100  justify-center items-center p-2 md:min-h-min md:dark:bg-inherit md:static md:mt-0 md:flex md:flex-row md:w-1/2  md:justify-around"
             id="navbar-default"
           >
             <div

@@ -32,8 +32,8 @@ code {
   width: 100%;
 }
 
-@media screen and (max-width = 768px) {
+@media screen and (max-width = 769px) {
  .nav-md-width{
-  max-width: 60%;
+  max-width: 90%;
  } 
 }
