@@ -5,7 +5,7 @@ const Rando = () =>{
 
 
     return (<>
-        <iframe title='resume' src={`${Resume}#view=fitH`} height='100%' width='100%' className="min-h-screen min-w-full max-h-screen max-w-full"/>
+        <iframe title='resume' src={Resume} height='100%' width='100%'className='min-h-screen min-w-full max-h-screen max-w-full'/>
         </>)
 
 }
