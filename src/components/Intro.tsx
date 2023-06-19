@@ -20,7 +20,7 @@ const Intro = () =>{
          vestibulum.
        </p>
      </div>
-     <div className="w-40 h-40 border-green-800 border-4 rounded-full p-2">
+     <div className="w-40 h-40 md:w-56 md:h-56 border-green-800 border-4 rounded-full p-2">
        <img className="rounded-full" src={profpic} alt="profile" />
      </div>
    </div>
