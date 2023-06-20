@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {Link} from 'react-router-dom'
 import React from "react";
 import Card from "./UI/Card";
 
@@ -69,7 +70,7 @@ const [doings, setdoings] = useState([
             egestas pretium aenean pharetra magna.
           </p>
         </div>
-        <div className="flex flex-col justify-center items-center gap-5">
+        <div className="flex flex-col justify-center items-center gap-5" id="contact-me">
           <h1 className="text-center font-bold text-4xl mb-4">Contact Me</h1>
           <p className="text-lg text-green-800 text-center underline mb-4">
             babalolakayode44@gmail.com
@@ -79,14 +80,20 @@ const [doings, setdoings] = useState([
           </button>
           <p>Follow me on:</p>
           <div className="flex justify-center items-center gap-10">
-            <i className="fa-brands fa-github text-4xl"></i>
-            <i className="fa-brands fa-instagram text-4xl"></i>
-            <i className="fa-brands fa-twitter text-4xl"></i>
+            <a
+              target="_blank" rel="noreferrer" href="https://github.com/kayode-dev">
+              <i className="fa-brands fa-github text-4xl"></i>
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://instagram.com/kayode.docx">
+              <i className="fa-brands fa-instagram text-4xl"></i>
+            </a>
+            <a target="_blank" rel="noreferrer" href='https://twitter.com/kayode_txt'>
+            <i className="fa-brands fa-twitter text-4xl"></i></a>
           </div>
         </div>
         <iframe
-        title="spotify playlist"
-          className='rounded-xl'
+          title="spotify playlist"
+          className="rounded-xl"
           src="https://open.spotify.com/embed/playlist/3IKp71IDc0HpxOFI0K5twy?utm_source=generator"
           width="100%"
           height="352"
