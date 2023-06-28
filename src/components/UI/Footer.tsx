@@ -5,7 +5,7 @@ const Footer = () =>{
 return (
   <div className='mt-10'>
     <hr className="border-inherit" />
-    <div className='flex my-4'>
+    <div className='flex my-4 justify-between'>
       {" "}
       <p>&copy; kayode.txt {thisyear}</p>
       <div className="flex gap-10 justify-around">
