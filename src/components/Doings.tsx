@@ -2,7 +2,7 @@ import { useState } from "react";
 import {Link} from 'react-router-dom'
 import React from "react";
 import Card from "./UI/Card";
-
+import Articles from "./Articles";
 import love from '../images/memojilove.png';
 import meditate from '../images/memojimeditate.png';
 import smile from '../images/memojismile.png';
@@ -70,27 +70,45 @@ const [doings, setdoings] = useState([
             egestas pretium aenean pharetra magna.
           </p>
         </div>
-        <div className="flex flex-col justify-center items-center gap-5" id="contact-me">
+        <div
+          className="flex flex-col justify-center items-center gap-5"
+          id="contact-me"
+        >
           <h1 className="text-center font-bold text-4xl mb-4">Contact Me</h1>
-          <p className="text-lg text-green-800 text-center underline mb-4">
-            babalolakayode44@gmail.com
-          </p>
-          <button className="h-10 w-30 p-2 rounded-lg bg-green-800">
+          <a href="mailto:babalolakayode44@gmail.com">
+            <p className="text-lg text-green-800 text-center underline mb-4">
+              babalolakayode44@gmail.com
+            </p>
+          </a>
+          <button className="h-10 w-30 p-2 rounded-lg bg-green-800 hover:scale">
             Book a Meeting
           </button>
           <p>Follow me on:</p>
           <div className="flex justify-center items-center gap-10">
             <a
-              target="_blank" rel="noreferrer" href="https://github.com/kayode-dev">
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/kayode-dev"
+            >
               <i className="fa-brands fa-github text-4xl"></i>
             </a>
-            <a target="_blank" rel="noreferrer" href="https://instagram.com/kayode.docx">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://instagram.com/kayode.docx"
+            >
               <i className="fa-brands fa-instagram text-4xl"></i>
             </a>
-            <a target="_blank" rel="noreferrer" href='https://twitter.com/kayode_txt'>
-            <i className="fa-brands fa-twitter text-4xl"></i></a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://twitter.com/kayode_txt"
+            >
+              <i className="fa-brands fa-twitter text-4xl"></i>
+            </a>
           </div>
         </div>
+        <Articles/>
         <iframe
           title="spotify playlist"
           className="rounded-xl"

@@ -12,12 +12,7 @@ const Intro = () =>{
          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
          tempor incididunt ut labore et dolore magna aliqua. Sit amet aliquam id
          diam maecenas. Porta lorem mollis aliquam ut porttitor leo a diam.
-         Integer enim neque volutpat ac. Elementum nisi quis eleifend quam
-         adipiscing. Faucibus scelerisque eleifend donec pretium vulputate.
-         Quisque id diam vel quam. Urna et pharetra pharetra massa. At augue
-         eget arcu dictum varius duis at. Fusce ut placerat orci nulla
-         pellentesque dignissim enim sit. Aenean pharetra magna ac placerat
-         vestibulum.
+         Integer enim neque volutpat ac.
        </p>
      </div>
      <div className="w-40 h-40 md:w-56 md:h-56 border-green-800 border-4 rounded-full p-2">

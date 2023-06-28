@@ -10,7 +10,7 @@ const MyApp: any = () => {
   return (
     <BrowserRouter>
     <ThemeProvider>
-      <main className="w-full px-3 md:w-4/5 grid items-center mx-auto">
+      <main className="w-full px-3 lg:w-[90%] grid items-center mx-auto">
         <NavBar />
 
         
