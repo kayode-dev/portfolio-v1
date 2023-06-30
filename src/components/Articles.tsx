@@ -20,7 +20,7 @@ const articles = [
 const Articles = () =>{
 return (
   <div>
-    <h1 className="text-center font-bold text-4xl mb-4">Recent Articles</h1>
+    <h1 className="text-center font-bold text-3xl mb-4">Recent Articles</h1>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
       {articles.map((article) => (
         <a href={article.link} target="_blank">
