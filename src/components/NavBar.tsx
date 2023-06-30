@@ -1,5 +1,5 @@
-import {Link } from "react-router-dom";
-import  'react-router-hash-link';
+import { Link } from "react-router-dom";
+import "react-router-hash-link";
 import React, { useState } from "react";
 import { useTheme } from "next-themes";
 import SideBar from "./UI/SideBar";
@@ -16,14 +16,14 @@ const NavBar: any = () => {
     themeicon = "light_mode";
     backdrop_brightness = 150;
   } else {
-    setTheme("light"); 
+    setTheme("light");
     themeicon = "dark_mode";
     backdrop_brightness = 50;
   }
 
-  const navShowHandler: any = () =>{
+  const navShowHandler: any = () => {
     setShowNav(!showNav);
-  }
+  };
 
   const themeChangeHandler: any = () => {
     setthememode(!thememode);
@@ -43,7 +43,7 @@ const NavBar: any = () => {
           </button>
         )}
         <div
-          className="w-3/5 hidden left-0 mt-32 min-h-full fixed z-20 bg-gray-100  justify-center items-center p-2 md:w-3/5 md:min-h-min md:dark:bg-inherit md:static md:mt-0 md:flex md:gap-4  md:justify-around lg:w-1/2 "
+          className="w-3/5 hidden left-0 mt-32 min-h-full fixed z-20 bg-gray-100  justify-center items-center p-2 md:w-3/5 md:min-h-min md:dark:bg-inherit md:static md:mt-0 md:flex md:gap-4  md:justify-around"
           id="navbar-default"
         >
           <div
@@ -60,7 +60,7 @@ const NavBar: any = () => {
               backdrop_brightness
             }
           >
-            <Link to="/rando">Resume</Link>
+            <Link to="/resume">Resume</Link>
           </div>
           <div
             className={
@@ -76,7 +76,7 @@ const NavBar: any = () => {
               backdrop_brightness
             }
           >
-            <Link to="#contact-me">Contact Me</Link>
+            <Link to="../#contact-me">Contact Me</Link>
           </div>
         </div>
         <button
