@@ -78,9 +78,15 @@ const Doings = () => {
             babalolakayode44@gmail.com
           </p>
         </a>
-        <button className="h-10 w-30 p-2 rounded-lg bg-green-800 hover:scale-110">
-          Book a Meeting
-        </button>
+        <a
+          href="https://calendly.com/babalolakayode44"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="h-10 w-30 p-2 rounded-lg bg-green-800 text-white hover:scale-110">
+            Book a Meeting
+          </button>
+        </a>
         <p>Follow me on:</p>
         <div className="flex justify-center items-center gap-10 text-3xl">
           <a
