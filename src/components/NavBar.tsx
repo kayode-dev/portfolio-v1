@@ -1,8 +1,10 @@
-import { Link } from "react-router-dom";
-import "react-router-hash-link";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useTheme } from "next-themes";
+import { Link } from "react-router-dom";
+
+
 import SideBar from "./UI/SideBar";
+import ContactContext from "../contexts/ContactScroll";
 
 const NavBar: any = () => {
   const [thememode, setthememode] = useState(false);
@@ -28,6 +30,15 @@ const NavBar: any = () => {
   const themeChangeHandler: any = () => {
     setthememode(!thememode);
   };
+
+  const scrollToContact = useContext(ContactContext);
+
+  const DisplayContact = () => {
+    setTimeout(async () => {
+      scrollToContact.Contact_sect_Location();
+    }, 100);
+  };
+
   return (
     <>
       <nav className="h-32 w-full flex justify-between font-medium text-base">
@@ -76,7 +87,9 @@ const NavBar: any = () => {
               backdrop_brightness
             }
           >
-            <Link to="../#contact-me">Contact Me</Link>
+            <Link to="/" onClick={DisplayContact}>
+              Contact Me
+            </Link>
           </div>
         </div>
         <button

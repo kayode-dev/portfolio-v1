@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Intro from './Intro';
 import Doings from './Doings';
 const Home = () => {

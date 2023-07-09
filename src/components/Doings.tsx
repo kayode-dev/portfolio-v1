@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import React from "react";
+
 import Card from "./UI/Card";
 import Articles from "./Articles";
 import love from "../images/memojilove.png";
@@ -42,6 +42,7 @@ const Doings = () => {
       ),
     },
   ];
+
 
   return (
     <div className="flex flex-col gap-10">

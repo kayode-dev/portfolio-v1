@@ -14,7 +14,7 @@ const articles = [
     link: "https://www.jetronticket.com/blogs/music-watch-love-lust-and-hustle",
     image: require("../images/music-watch_pa4niy.webp"),
     description:
-      "Somehow the feeling that we are not the only ones going through whatever we are going through comforts us.",
+      "Somehow the feeling that we are not the only ones going through whatever we are going through comforts us. scooby dobby doooooooooooooo",
   },
 ];
 const Articles = () =>{
