@@ -48,6 +48,16 @@ hr {
   transform: scale(1.15);
 }
 
-.nav-link:hover{
+.nav-link:hover {
   background-color: #07070725;
+}
+
+.sidebar-light {
+  background-color: #ffffff;
+  color: black;
+}
+
+.sidebar-dark {
+  background-color: #121212;
+  color: white;
 }

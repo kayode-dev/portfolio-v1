@@ -10,16 +10,16 @@ const NavBar: any = () => {
   const { theme, setTheme } = useTheme();
   const [showNav, setShowNav] = useState(false);
   let themeicon;
-  let backdrop_brightness;
+  let sidebar_color;
 
   if (!thememode) {
     setTheme("dark");
     themeicon = "light_mode";
-    backdrop_brightness = 200;
+    sidebar_color = "sidebar-dark";
   } else {
     setTheme("light");
     themeicon = "dark_mode";
-    backdrop_brightness = 50;
+    sidebar_color = "sidebar-light";
   }
 
   const navShowHandler: any = () => {
@@ -42,7 +42,7 @@ const NavBar: any = () => {
     <>
       <nav className="h-32 w-full flex justify-between font-medium text-base">
         {showNav ? (
-          <SideBar onCloseClick={navShowHandler} />
+          <SideBar onCloseClick={navShowHandler} colors={sidebar_color}/>
         ) : (
           <button
             type="button"

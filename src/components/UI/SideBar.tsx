@@ -13,7 +13,12 @@ const SideBar = (props: any) => {
   };
 
   return (
-    <div className="p-6 min-h-full top-0 left-0 fixed bg-green-800 text-black flex flex-col justify-around scroll min-w-full z-10 md:hidden">
+    <div
+      className={
+        "p-6 min-h-full top-0 left-0 fixed flex flex-col justify-around scroll min-w-full z-10 md:hidden " +
+        props.colors
+      }
+    >
       <button
         className="h-14 w-14 rounded self-end"
         type="button"
