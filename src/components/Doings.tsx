@@ -3,7 +3,7 @@ import React from "react";
 import Card from "./UI/Card";
 import Articles from "./Articles";
 import love from "../images/memojilove.png";
-import meditate from "../images/memojimeditate.png";
+import lightbulb from "../images/memojilightbulb.png";
 import smile from "../images/memojismile.png";
 
 const Doings = () => {
@@ -20,7 +20,7 @@ const Doings = () => {
       ),
     },
     {
-      image: meditate,
+      image: lightbulb,
       heading: "Backend Development",
       summary: (
         <p>
@@ -42,7 +42,6 @@ const Doings = () => {
       ),
     },
   ];
-
 
   return (
     <div className="flex flex-col gap-10">

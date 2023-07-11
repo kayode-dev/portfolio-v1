@@ -2,7 +2,6 @@ import React, { useContext, useState } from "react";
 import { useTheme } from "next-themes";
 import { Link } from "react-router-dom";
 
-
 import SideBar from "./UI/SideBar";
 import ContactContext from "../contexts/ContactScroll";
 
@@ -16,7 +15,7 @@ const NavBar: any = () => {
   if (!thememode) {
     setTheme("dark");
     themeicon = "light_mode";
-    backdrop_brightness = 150;
+    backdrop_brightness = 200;
   } else {
     setTheme("light");
     themeicon = "dark_mode";
@@ -57,46 +56,23 @@ const NavBar: any = () => {
           className="w-3/5 hidden left-0 mt-32 min-h-full fixed z-20 bg-gray-100  justify-center items-center p-2 md:w-3/5 md:min-h-min md:dark:bg-inherit md:static md:mt-0 md:flex md:gap-4  md:justify-around"
           id="navbar-default"
         >
-          <div
-            className={
-              "h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center  hover:backdrop-brightness-" +
-              backdrop_brightness
-            }
-          >
+          <div className="h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center nav-link">
             <Link to="/">Home</Link>
           </div>
-          <div
-            className={
-              "h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center  hover:backdrop-brightness-" +
-              backdrop_brightness
-            }
-          >
+          <div className="h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center nav-link">
             <Link to="/resume">Resume</Link>
           </div>
-          <div
-            className={
-              "h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center  hover:backdrop-brightness-" +
-              backdrop_brightness
-            }
-          >
+          <div className="h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center nav-link">
             <Link to=".">Articles</Link>
           </div>
-          <div
-            className={
-              "h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center  hover:backdrop-brightness-" +
-              backdrop_brightness
-            }
-          >
+          <div className="h-auto w-auto py-2 px-3 rounded-md flex justify-center items-center nav-link">
             <Link to="/" onClick={DisplayContact}>
               Contact Me
             </Link>
           </div>
         </div>
         <button
-          className={
-            "w-14 h-14 rounded flex justify-center items-center  my-auto p-3 hover:backdrop-brightness-" +
-            backdrop_brightness
-          }
+          className="w-14 h-14 rounded flex justify-center items-center  my-auto p-3 nav-link"
           onClick={themeChangeHandler}
         >
           <span className="material-symbols-outlined">{themeicon}</span>

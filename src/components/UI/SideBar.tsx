@@ -31,7 +31,7 @@ const SideBar = (props: any) => {
 
         <li>
           <button onClick={props.onCloseClick}>
-            <Link to="/rando">Resume</Link>
+            <Link to="/resume">Resume</Link>
           </button>
         </li>
         <hr />

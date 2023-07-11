@@ -7,7 +7,6 @@
   transition: 0.1s all ease;
 }
 
-
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -43,4 +42,12 @@ hr {
 
 .body_w {
   width: 90%;
+}
+
+.card-img:hover div img {
+  transform: scale(1.15);
+}
+
+.nav-link:hover{
+  background-color: #07070725;
 }
