@@ -20,7 +20,7 @@ const SideBar = (props: any) => {
       }
     >
       <button
-        className="h-14 w-14 rounded self-end"
+        className="h-10 w-10 rounded nav-link flex items-center justify-center self-end"
         type="button"
         onClick={props.onCloseClick}
       >
