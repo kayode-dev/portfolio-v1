@@ -63,7 +63,7 @@ const NavBar: any = () => {
             <Link to="/resume">Resume</Link>
           </div>
           <div className="h-auto w-auto py-2 px-3 rounded flex justify-center items-center nav-link">
-            <Link to=".">Articles</Link>
+            <Link to="/articles">Articles</Link>
           </div>
           <div className="h-auto w-auto py-2 px-3 rounded flex justify-center items-center nav-link">
             <Link to="/" onClick={DisplayContact}>
