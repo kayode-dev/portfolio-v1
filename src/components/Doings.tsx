@@ -5,9 +5,10 @@ import Articles from "./Articles";
 import love from "../images/memojilove.png";
 import lightbulb from "../images/memojilightbulb.png";
 import smile from "../images/memojismile.png";
+import Projects from "./projects";
 
 const Doings = () => {
-  const doings = [
+  const doings: { image: any; heading: string; summary: any }[] = [
     {
       image: love,
       heading: "Frontend Development",
@@ -42,6 +43,19 @@ const Doings = () => {
       ),
     },
   ];
+  const technologies: { image: any; name: string }[] = [
+    { image: require("../images/tech/h5.png"), name: "HTML5" },
+    { image: require("../images/tech/c3.png"), name: "CSS 3" },
+    { image: require("../images/tech/js.png"), name: "Javascript" },
+    { image: require("../images/tech/ts.png"), name: "Typescript" },
+    { image: require("../images/tech/twc.png"), name: "Tailwind CSS" },
+    { image: require("../images/tech/bs.png"), name: "Bootstrap" },
+    { image: require("../images/tech/blazor.png"), name: "Blazor" },
+    { image: require("../images/tech/rea.png"), name: "React" },
+    { image: require("../images/tech/dotnet.png"), name: ".NET" },
+  ];
+
+ 
 
   return (
     <div className="flex flex-col gap-10">
@@ -66,11 +80,30 @@ const Doings = () => {
           egestas pretium aenean pharetra magna.
         </p>
       </div>
+      <div>
+        <h1 className="text-center font-bold text-3xl mb-8">Technologies</h1>
+        <div className="grid grid-cols-3 md:flex gap-8 items-center justify-center">
+          {technologies.map((tech) => (
+            <div className="h-20 w-20 p-4 flex flex-col justify-center items-center text-center gap-4 shadow-md rounded-lg card-img">
+              <div>
+                <img
+                  src={tech.image}
+                  alt=""
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <Projects />
       <div
         className="flex flex-col justify-center items-center gap-5"
         id="contact-me"
       >
-        <h1 className="text-center font-bold text-3xl mb-4" id="contact-me">
+        <h1
+          className="text-center font-bold text-3xl mb-4"
+          id="contact-me"
+        >
           Contact Me
         </h1>
         <a href="mailto:babalolakayode44@gmail.com">
@@ -83,7 +116,7 @@ const Doings = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <button className="h-10 w-30 p-2 rounded-lg bg-green-800 text-white hover:scale-110">
+          <button className="h-10 w-30 p-2 rounded-lg bg-green-800 text-white hover:scale-110 duration-500">
             Book a Meeting
           </button>
         </a>

@@ -34,13 +34,6 @@ const articles = [
     type: "",
   },
   {
-    name: "falling off",
-    link: "https://localmanwt.blogspot.com/2021/12/falling-off.html",
-    image: require("../images/fallingoff.jpeg"),
-    description: "",
-    type: "",
-  },
-  {
     name: "incomplete",
     link: "https://localmanwt.blogspot.com/2021/12/incomplete.html",
     image: require("../images/incomplete.jpeg"),
