@@ -1,7 +1,6 @@
 import React from "react";
 
 import Card from "./UI/Card";
-import Articles from "./Articles";
 import love from "../images/memojilove.png";
 import lightbulb from "../images/memojilightbulb.png";
 import smile from "../images/memojismile.png";
@@ -53,6 +52,7 @@ const Doings = () => {
     { image: require("../images/tech/blazor.png"), name: "Blazor" },
     { image: require("../images/tech/rea.png"), name: "React" },
     { image: require("../images/tech/dotnet.png"), name: ".NET" },
+    {image: require("../images/tech/firebase.png"), name: "Firebase"}
   ];
 
  
@@ -82,9 +82,9 @@ const Doings = () => {
       </div>
       <div>
         <h1 className="text-center font-bold text-3xl mb-8">Technologies</h1>
-        <div className="grid grid-cols-3 md:flex gap-8 items-center justify-center">
+        <div className=" flex flex-wrap gap-8 items-center justify-center">
           {technologies.map((tech) => (
-            <div className="h-20 w-20 p-4 flex flex-col justify-center items-center text-center gap-4 shadow-md rounded-lg card-img">
+            <div className="h-20 w-20 p-4 flex flex-col justify-center items-center text-center gap-4 shadow-neutral-800 shadow-md rounded-lg card-img">
               <div>
                 <img
                   src={tech.image}
@@ -153,7 +153,6 @@ const Doings = () => {
           </a>
         </div>
       </div>
-      <Articles />
       <div>
         <h1 className="text-center font-bold text-3xl mb-4">
           Spotify Playlist

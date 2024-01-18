@@ -6,8 +6,6 @@ import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import Rando from "./components/rando";
 import Footer from "./components/UI/Footer";
-import ContactContext from "./contexts/ContactScroll";
-import MainArticle from "./components/mainArticles";
 
 const MyApp: any = () => {
   return (
@@ -18,7 +16,6 @@ const MyApp: any = () => {
           <Routes>
             <Route index element={<Home />} />
             <Route path="resume" element={<Rando />} />
-            <Route path="articles" element={<MainArticle />} />
           </Routes>
           <Footer />
         </main>

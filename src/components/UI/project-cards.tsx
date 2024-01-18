@@ -4,7 +4,18 @@ const ProjectCards = (props: any) => {
     <div className="p-8 flex flex-col justify-center items-center text-center gap-8 shadow-xl rounded-2xl">
       <div className="flex flex-col gap-4 items-center">
         <h2 className="text-2xl font-semibold">{props.heading}</h2>
-        <p className="text-lg text-green-800">{props.summary}</p>
+        <p className="text-green-800">{props.summary}</p>
+      </div>
+      <div className="flex gap-8">
+        {props.tech.map((tech: any) => (
+          <div className="h-12 w-12">
+            <img
+              src={tech}
+             
+              alt=""
+            />
+          </div>
+        ))}
       </div>
       <div className="flex items-center gap-8">
         <a href={props.liveUrl}>
