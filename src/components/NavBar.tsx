@@ -3,7 +3,7 @@ import { useTheme } from "next-themes";
 import { Link } from "react-router-dom";
 
 import SideBar from "./UI/SideBar";
-import ContactContext from "../contexts/ContactScroll";
+import ContactContext, { ProjectContext } from "../contexts/ContactScroll";
 
 const NavBar: any = () => {
   const [thememode, setthememode] = useState(false);
@@ -31,12 +31,18 @@ const NavBar: any = () => {
   };
 
   const scrollToContact = useContext(ContactContext);
+  const scrollToprojects = useContext(ProjectContext);
 
   const DisplayContact = () => {
     setTimeout(async () => {
       scrollToContact.Contact_sect_Location();
     }, 100);
   };
+  const displayProject = () =>{
+    setTimeout(async ()=>{
+      scrollToprojects.Project_sect_Location();
+    }, 100)
+  }
 
   return (
     <>
@@ -63,7 +69,7 @@ const NavBar: any = () => {
             <Link to="/resume">Resume</Link>
           </div>
           <div className="h-auto w-auto py-2 px-3 rounded flex justify-center items-center nav-link">
-            <Link to="/projects">Projects</Link>
+            <Link to="/" onClick={displayProject}>Projects</Link>
           </div>
           <div className="h-auto w-auto py-2 px-3 rounded flex justify-center items-center nav-link">
             <Link to="/" onClick={DisplayContact}>

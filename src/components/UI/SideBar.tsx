@@ -2,15 +2,21 @@ import React from "react";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 
-import ContactContext from "../../contexts/ContactScroll";
+import ContactContext, { ProjectContext } from "../../contexts/ContactScroll";
 
 const SideBar = (props: any) => {
   const scrollToContact = useContext(ContactContext);
+  const scrollToprojects = useContext(ProjectContext);
   const DisplayContact = () => {
     setTimeout(async () => {
       scrollToContact.Contact_sect_Location();
     }, 100);
   };
+  const displayProject = () =>{
+    setTimeout(async ()=>{
+      scrollToprojects.Project_sect_Location();
+    }, 100)
+  }
 
   return (
     <div
@@ -43,7 +49,7 @@ const SideBar = (props: any) => {
 
         <li>
           <button onClick={props.onCloseClick}>
-            <Link to="/articles">Articles</Link>
+            <Link to="/" onClick={displayProject}>Projects</Link>
           </button>
         </li>
         <hr />
