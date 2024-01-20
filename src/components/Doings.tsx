@@ -13,31 +13,31 @@ const Doings = () => {
       heading: "Frontend Development",
       summary: (
         <p>
-          I build fast, beautiful, SEO friendly frontend applications that
-          suites your every need. With <code>HTML</code>, <code>CSS</code>,{" "}
-          <code>JavaScript</code>, <code>ReactJS</code>, and more.
+          I build fast, SEO friendly frontend applications that suites your
+          every need. With technologies like <code>HTML</code>, <code>CSS</code>
+          , <code>JavaScript</code>, <code>ReactJS</code>, and more.
         </p>
       ),
     },
     {
       image: lightbulb,
-      heading: "Backend Development",
+      heading: "Project Management",
       summary: (
         <p>
-          I build fast, beautiful, SEO friendly frontend applications that
-          suites your every need. With <code>HTML</code>, <code>CSS</code>,{" "}
-          <code>JavaScript</code>, <code>ReactJS</code>, and more.
+          I build create, manage and execute project plans to acheive client
+          goals. I also understand projet risk and assign team members to
+          specific tasks
         </p>
       ),
     },
     {
       image: smile,
-      heading: "Article Writing",
+      heading: "Creative Writing",
       summary: (
         <p>
-          I build fast, beautiful, SEO friendly frontend applications that
-          suites your every need. With <code>HTML</code>, <code>CSS</code>,{" "}
-          <code>JavaScript</code>, <code>ReactJS</code>, and more.
+          I write articles on music / entertainment, press releases for bodies
+          of work, scripts for ads or stories and engage in the occasional rant
+          on my personal blog
         </p>
       ),
     },
@@ -52,13 +52,11 @@ const Doings = () => {
     { image: require("../images/tech/blazor.png"), name: "Blazor" },
     { image: require("../images/tech/rea.png"), name: "React" },
     { image: require("../images/tech/dotnet.png"), name: ".NET" },
-    {image: require("../images/tech/firebase.png"), name: "Firebase"}
+    { image: require("../images/tech/firebase.png"), name: "Firebase" },
   ];
 
- 
-
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-32">
       {" "}
       <div>
         <h1 className="text-center font-bold text-3xl mb-8">What I Do</h1>
@@ -75,16 +73,19 @@ const Doings = () => {
       <div>
         <h1 className="text-center font-bold text-3xl mb-8">About Me</h1>
         <p className="text-lg text-green-800 text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis
-          egestas pretium aenean pharetra magna.
+          Hey there 👋🏾, I am Kayode Babalola, a Front-end Developer, Project
+          Manager and Creative Writer. I consider myself a creative first and this has
+          helped me in extending and inter-relating my abilities in all my
+          creative endavours. I have 2+ years experience as a Front-end
+          Developer and Project Manager and 4+ years experience as a Creative
+          Writer.
         </p>
       </div>
       <div>
         <h1 className="text-center font-bold text-3xl mb-8">Technologies</h1>
         <div className=" flex flex-wrap gap-8 items-center justify-center">
           {technologies.map((tech) => (
-            <div className="h-20 w-20 p-4 flex flex-col justify-center items-center text-center gap-4 shadow-neutral-800 shadow-md rounded-lg card-img">
+            <div className="h-20 w-20 p-4 flex flex-col justify-center items-center text-center gap-4 shadow-lg rounded-lg card-img">
               <div>
                 <img
                   src={tech.image}
