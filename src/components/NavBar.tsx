@@ -40,7 +40,7 @@ const NavBar: any = () => {
 
   return (
     <>
-      <nav className="h-32 w-full flex justify-between font-medium text-base">
+      <nav className="h-20 md:h-32 w-full flex justify-between font-medium text-base">
         {showNav ? (
           <SideBar onCloseClick={navShowHandler} colors={sidebar_color} />
         ) : (

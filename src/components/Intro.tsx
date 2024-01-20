@@ -1,6 +1,6 @@
 import React from "react";
 
-import profpic from "../images/blocked.jpg";
+import profpic from "../images/IMG_6729.jpg";
 
 const Intro = () => {
   return (
@@ -11,8 +11,8 @@ const Intro = () => {
           Front-end Developer / Project Manager👨🏾‍💻
         </p>
         <p className="font-medium text-lg text-green-800">
-          Hello! Im Kayode, a Front-end developer who loves implementing
-          web-designs, bringing them to life, meeting clients expectations and
+          Hello! Im Kayode, a Front-end developer who loves impl ementing
+          web-designs, meeting clients expectations and
           can easily center my <code>div</code>'s. I enjoy some of the
           challenges that come with programming, hence my underlying interest in
           becoming a Fullstack Developer. I also set and manage client expections,

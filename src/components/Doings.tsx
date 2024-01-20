@@ -74,9 +74,9 @@ const Doings = () => {
         <h1 className="text-center font-bold text-3xl mb-8">About Me</h1>
         <p className="text-lg text-green-800 text-center">
           Hey there 👋🏾, I am Kayode Babalola, a Front-end Developer, Project
-          Manager and Creative Writer. I consider myself a creative first and this has
-          helped me in extending and inter-relating my abilities in all my
-          creative endavours. I have 2+ years experience as a Front-end
+          Manager and Creative Writer. I consider myself a creative first and
+          this has helped me in extending and inter-relating my abilities in all
+          my creative endavours. I have 2+ years experience as a Front-end
           Developer and Project Manager and 4+ years experience as a Creative
           Writer.
         </p>
@@ -85,7 +85,7 @@ const Doings = () => {
         <h1 className="text-center font-bold text-3xl mb-8">Technologies</h1>
         <div className=" flex flex-wrap gap-8 items-center justify-center">
           {technologies.map((tech) => (
-            <div className="h-20 w-20 p-4 flex flex-col justify-center items-center text-center gap-4 shadow-lg rounded-lg card-img">
+            <div className="h-20 w-20 p-4 flex flex-col justify-center items-center text-center gap-4 doings rounded-lg card-img">
               <div>
                 <img
                   src={tech.image}
@@ -161,7 +161,7 @@ const Doings = () => {
         <iframe
           title="spotify playlist"
           className="rounded-2xl"
-          src="https://open.spotify.com/embed/playlist/3IKp71IDc0HpxOFI0K5twy?utm_source=generator"
+          src="https://open.spotify.com/embed/playlist/3g1wkGVS4b2vuhrTEOKGej?utm_source=generator"
           width="100%"
           height="352"
           frameBorder="0"

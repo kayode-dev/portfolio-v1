@@ -12,7 +12,7 @@ const projects: {
   {
     heading: "RunDwn",
     summary:
-      "A website that utilizes the Spotify APi to get users top artist's and tracks over their selected time frame",
+      "A website that utilizes the Spotify API to get users top artist's and tracks over their selected time frame.",
     liveUrl: "https://rundwn.vercel.app",
     GithubRepo: "https://github.com/kayode-dev/wrapped-anytime",
     tech: [
@@ -23,7 +23,7 @@ const projects: {
   {
     heading: "Kayode-GPT",
     summary:
-      "A website that utilizes the Spotify APi to get users top artist's and tracks over their selected time frame",
+      "An AI-chatbot developed using the CHAT-GPT 3.5 turbo API to respond to prompts inputted by the user, also comes with Image Generation capabilities.",
     liveUrl: "https://kayode-gpt.vercel.app/",
     GithubRepo: " https://github.com/kayode-dev/kayode-gpt", 
     tech: [
@@ -35,7 +35,7 @@ const projects: {
   {
     heading: "Task-manager",
     summary:
-      "A website that utilizes the Spotify APi to get users top artist's and tracks over their selected time frame",
+      "A Todo list application where the user can add, remove, update task and mark them as done.",
     liveUrl: "https://task-manager-eta-six.vercel.app/",
     GithubRepo: "https://github.com/kayode-dev/wrapped-anytime",
     tech: [

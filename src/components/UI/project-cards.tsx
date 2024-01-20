@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 const ProjectCards = (props: any) => {
   return (
-    <div className="p-8 flex flex-col justify-center items-center text-center gap-8 shadow-2xl rounded-2xl">
+    <div className="p-8 flex flex-col justify-center items-center text-center gap-8 doings rounded-2xl bg-inherit">
       <div className="flex flex-col gap-4 items-center">
         <h2 className="text-2xl font-semibold">{props.heading}</h2>
         <p className="text-green-800">{props.summary}</p>
