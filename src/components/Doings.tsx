@@ -5,6 +5,9 @@ import love from "../images/memojilove.png";
 import lightbulb from "../images/memojilightbulb.png";
 import smile from "../images/memojismile.png";
 import Projects from "./projects";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { useGSAP } from "@gsap/react";
 
 const Doings = () => {
   const doings: { image: any; heading: string; summary: any }[] = [
@@ -55,10 +58,23 @@ const Doings = () => {
     { image: require("../images/tech/firebase.png"), name: "Firebase" },
   ];
 
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const doings = gsap.utils.toArray(".doings")
+    const tl = gsap.timeline({
+      scrollTrigger: { trigger: ".doings", markers: true, scrub: 1, },
+    });
+    tl.from(doings, {
+      y: 400,
+      opacity: 0,
+      duration: 3,
+    });
+  });
+
   return (
     <div className="flex flex-col gap-32">
       {" "}
-      <div>
+      <div id="what-i-do">
         <h1 className="text-center font-bold text-3xl mb-8">What I Do</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {doings.map((doin) => (
