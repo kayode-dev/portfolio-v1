@@ -10,7 +10,12 @@ import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 
 const Doings = () => {
-  const doings: { image: any; heading: string; summary: any }[] = [
+  const doings: {
+    image: any;
+    heading: string;
+    summary: any;
+    scrollClass: string;
+  }[] = [
     {
       image: love,
       heading: "Frontend Development",
@@ -21,6 +26,7 @@ const Doings = () => {
           , <code>JavaScript</code>, <code>ReactJS</code>, and more.
         </p>
       ),
+      scrollClass: "fe-dev",
     },
     {
       image: lightbulb,
@@ -32,6 +38,7 @@ const Doings = () => {
           specific tasks
         </p>
       ),
+      scrollClass: "pro-mngt",
     },
     {
       image: smile,
@@ -43,6 +50,7 @@ const Doings = () => {
           on my personal blog
         </p>
       ),
+      scrollClass: "cre-wri",
     },
   ];
   const technologies: { image: any; name: string }[] = [
@@ -60,15 +68,16 @@ const Doings = () => {
 
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
-    const doings = gsap.utils.toArray(".doings")
+
     const tl = gsap.timeline({
-      scrollTrigger: { trigger: ".doings", markers: true, scrub: 1, },
+      scrollTrigger: { trigger: ".fe-dev", scrub: 1,},
     });
-    tl.from(doings, {
+    tl.from(".fe-dev", {
       y: 400,
       opacity: 0,
-      duration: 3,
-    });
+    })
+      .from(".pro-mgnt", { y: 400, opacity: 0,})
+      .from(".cre-wri", { y: 400, opacity: 0, });
   });
 
   return (
@@ -82,6 +91,7 @@ const Doings = () => {
               img={doin.image}
               heading={doin.heading}
               summary={doin.summary}
+              scrollClass={doin.scrollClass}
             />
           ))}
         </div>
