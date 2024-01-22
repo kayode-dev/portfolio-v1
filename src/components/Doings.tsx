@@ -70,21 +70,27 @@ const Doings = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     const tl = gsap.timeline({
-      scrollTrigger: { trigger: ".fe-dev", scrub: 1,},
+      scrollTrigger: { trigger: "#w-text", scrub: 1 },
     });
-    tl.from(".fe-dev", {
-      y: 400,
-      opacity: 0,
-    })
-      .from(".pro-mgnt", { y: 400, opacity: 0,})
-      .from(".cre-wri", { y: 400, opacity: 0, });
+    tl.from("#w-text", { y: 200, opacity: 0 })
+      .from(".fe-dev", {
+        y: 300,
+        opacity: 0,
+      })
+      .from(".pro-mngt", { y: 400, opacity: 0 })
+      .from(".cre-wri", { y: 500, opacity: 0 });
   });
 
   return (
     <div className="flex flex-col gap-32">
       {" "}
       <div id="what-i-do">
-        <h1 className="text-center font-bold text-3xl mb-8">What I Do</h1>
+        <h1
+          className="text-center font-bold text-3xl mb-8"
+          id="w-text"
+        >
+          What I Do
+        </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {doings.map((doin) => (
             <Card
