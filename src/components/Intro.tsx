@@ -5,26 +5,26 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 const Intro = () => {
-  useGSAP(() => {
-    gsap.from(".name", {
-      scale: 0.1,
-      ease: "power4.out",
-      opacity: 0,
-      duration: 2,
-    });
-    gsap.from(".description", { x: 500, opacity: 0, duration: 2 });
-    gsap.from(".intro", { y: 100, opacity: 0, duration: 2 });
-    gsap.from(".profpic", {
-      scale: 0.1,
-      ease: "power4.out",
-      opacity: 0,
-      duration: 2,
-    });
-  });
+  // useGSAP(() => {
+  //   gsap.from(".name", {
+  //     scale: 0.1,
+  //     ease: "power4.out",
+  //     opacity: 0,
+  //     duration: 2,
+  //   });
+  //   gsap.from(".description", { x: 500, opacity: 0, duration: 2 });
+  //   gsap.from(".intro", { y: 100, opacity: 0, duration: 2 });
+  //   gsap.from(".profpic", {
+  //     scale: 0.1,
+  //     ease: "power4.out",
+  //     opacity: 0,
+  //     duration: 2,
+  //   });
+  // });
   return (
-    <div className="flex flex-col-reverse gap-4 items-center justify-between mb-10 md:flex-row">
+    <div className="flex flex-col-reverse gap-4 items-center justify-between mb-10 md:flex-row md:h-[75vh]">
       <div className=" w-full md:w-[65%] my-auto l intro-spacing gap-4">
-        <h2 className="font-bold text-3xl name">Kayode Babalola</h2>
+        <h2 className="font-bold text-3xl md:text-5xl name">Kayode Babalola</h2>
         <p className="font-medium text-lg mb-2 description">
           Front-end Developer / Project Manager👨🏾‍💻
         </p>
