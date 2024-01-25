@@ -23,17 +23,6 @@ const Home = () => {
             duration: 2,
         });
         gsap.registerPlugin(ScrollTrigger);
-        // ScrollTrigger.config({ ignoreMobileResize: true });
-        // const tl = gsap.timeline({
-        //   scrollTrigger: { trigger: "#w-text", scrub: 1 },
-        // });
-        // tl.from("#w-text", { y: 200, opacity: 0 })
-        //   .from(".fe-dev", {
-        //     y: 300,
-        //     opacity: 0,
-        //   })
-        //   .from(".pro-mngt", { y: 400, opacity: 0 })
-        //   .from(".cre-wri", { y: 500, opacity: 0 });
 
         gsap.from("#w-text", { scrollTrigger: "#w-text", y: 200, opacity: 0 })
 
@@ -41,8 +30,14 @@ const Home = () => {
             y: 300,
             opacity: 0,
         })
-        gsap.from(".pro-mngt", {scrollTrigger: ".pro-mngt", y: 400, opacity: 0 })
+        gsap.from(".pro-mngt", {scrollTrigger: ".pro-mngt", y: 400, opacity: 0 });
         gsap.from(".cre-wri", {scrollTrigger: ".cre-wri", y: 500, opacity: 0 });
+
+        gsap.from("#abt-me", {scrollTrigger: "#abt-me", y: 200, opacity: 0 });
+        gsap.from("#abt-me-subtext", {scrollTrigger: "#abt-me-subtext", y: 500, opacity: 0 });
+
+        gsap.from("#live-pro", {scrollTrigger: "#live-pro", y: 200, opacity: 0 });
+
     });
     return (
         <div>

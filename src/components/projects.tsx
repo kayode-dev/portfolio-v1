@@ -50,7 +50,7 @@ const Projects = () => {
   return (
     <div id="projects">
       {" "}
-      <h1 className="text-center font-bold text-3xl mb-4">Live Projects</h1>
+      <h1 className="text-center font-bold text-3xl mb-4" id="live-pro">Live Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
         {projects.map((project) => (
           <ProjectCards

@@ -103,8 +103,8 @@ const Doings = () => {
         </div>
       </div>
       <div>
-        <h1 className="text-center font-bold text-3xl mb-8">About Me</h1>
-        <p className="text-lg text-green-800 text-center">
+        <h1 className="text-center font-bold text-3xl mb-8" id="abt-me">About Me</h1>
+        <p className="text-lg text-green-800 text-center" id="abt-me-subtext">
           Hey there 👋🏾, I am Kayode Babalola, a Front-end Developer, Project
           Manager and Creative Writer. I consider myself a creative first and
           this has helped me in extending and inter-relating my abilities in all
@@ -117,7 +117,7 @@ const Doings = () => {
         <h1 className="text-center font-bold text-3xl mb-8">Technologies</h1>
         <div className=" flex flex-wrap gap-8 items-center justify-center">
           {technologies.map((tech) => (
-            <div className="h-20 w-20 p-4 flex flex-col justify-center items-center text-center gap-4 doings rounded-lg card-img">
+            <div className="h-20 w-20 p-4 flex flex-col justify-center items-center text-center gap-4 doings rounded-lg card-img tech">
               <div>
                 <img
                   src={tech.image}
