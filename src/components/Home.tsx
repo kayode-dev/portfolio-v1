@@ -53,7 +53,7 @@ const Home = () => {
 
     });
     return (
-        <div>
+        <div className='grid grid-cols-1'>
             <Intro />
             <Doings />
         </div>
