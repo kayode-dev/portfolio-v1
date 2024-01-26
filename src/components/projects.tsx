@@ -7,6 +7,7 @@ const projects: {
   summary: string;
   liveUrl: string;
   GithubRepo: string;
+  class: string;
   tech: any[];
 }[] = [
   {
@@ -15,6 +16,7 @@ const projects: {
       "A website that utilizes the Spotify API to get users top artist's and tracks over their selected time frame.",
     liveUrl: "https://rundwn.vercel.app",
     GithubRepo: "https://github.com/kayode-dev/wrapped-anytime",
+    class:"run-tech",
     tech: [
       require("../images/tech/twc.png"),
       require("../images/tech/rea.png"),
@@ -26,6 +28,7 @@ const projects: {
       "An AI-chatbot developed using the CHAT-GPT 3.5 turbo API to respond to prompts inputted by the user, also comes with Image Generation capabilities.",
     liveUrl: "https://kayode-gpt.vercel.app/",
     GithubRepo: " https://github.com/kayode-dev/kayode-gpt", 
+    class:"gpt-tech",
     tech: [
       require("../images/tech/twc.png"),
       require("../images/tech/rea.png"),
@@ -38,6 +41,7 @@ const projects: {
       "A Todo list application where the user can add, remove, update task and mark them as done.",
     liveUrl: "https://task-manager-eta-six.vercel.app/",
     GithubRepo: "https://github.com/kayode-dev/wrapped-anytime",
+    class:"task-tech",
     tech: [
       require("../images/tech/twc.png"),
       require("../images/tech/rea.png"),
@@ -59,6 +63,7 @@ const Projects = () => {
             liveUrl={project.liveUrl}
             GithubRepo={project.GithubRepo}
             tech={project.tech}
+            class={project.class}
           />
         ))}
       </div>
