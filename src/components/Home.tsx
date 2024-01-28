@@ -53,7 +53,7 @@ const Home = () => {
 
     });
     return (
-        <div className='grid grid-cols-1'>
+        <div className='flex flex-col justify-center'>
             <Intro />
             <Doings />
         </div>

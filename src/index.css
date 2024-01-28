@@ -6,20 +6,20 @@
 * {
   transition: 0.1s all ease;
 }
-:root{
-  --background:white;
-  --foreground:black
+:root {
+  --background: white;
+  --foreground: black;
 }
 
-[data-theme='dark']{
-  --background:#121212;
-  --foreground:white;
+[data-theme="dark"] {
+  --background: #121212;
+  --foreground: white;
 }
 
 body {
   margin: 0;
   background-color: var(--background);
-  color:var(--foreground);
+  color: var(--foreground);
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -86,7 +86,9 @@ hr {
   position: absolute;
   left: 0%;
   top: 0%;
-  animation: primary 5s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .primary {

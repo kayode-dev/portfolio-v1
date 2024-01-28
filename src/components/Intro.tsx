@@ -6,7 +6,7 @@ import profpic from "../images/IMG_6729.jpg";
 const Intro = () => {
 
   return (
-    <div className="flex flex-col-reverse gap-4 items-center justify-between mb-10 md:flex-row md:h-[75vh]">
+    <div className="flex flex-col-reverse md:flex-row gap-4 items-center justify-between mb-10  md:h-[75vh] w-full">
       <div className=" w-full md:w-[65%] my-auto l intro-spacing gap-4">
         <h2 className="font-bold text-3xl md:text-5xl name">Kayode Babalola</h2>
         <p className="font-medium text-lg mb-2 description">
