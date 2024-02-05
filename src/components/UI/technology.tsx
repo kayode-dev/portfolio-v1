@@ -18,41 +18,17 @@ const Technology = () => {
   return (
     <div className="flex flex-col w-full">
       <h1 className="text-center font-bold text-3xl mb-8">Technologies</h1>
-      {/* <div className="w-min md:w-full overflow-x-auto overflow-y-hidden relative bg-yellow-800">
-        <div className="flex justify-center gap-8 bg-red-400">
-          {technologies.map((tech) => (
-            <div className="h-20 w-20 p-4 gap-4 doings rounded-lg card-img">
-              <img
-                src={tech.image}
-                alt=""
-              />
-            </div>
-          ))}
-        </div>
-       
-      </div> */}
-      <div className="flex scroll-parent">
-          <div className="gap-8 scroll-element primary">
-            {technologies.map((tech) => (
-              <div className="h-20 w-20 p-4 gap-4 doings rounded-lg">
-                <img
-                  src={tech.image}
-                  alt=""
-                />
-              </div>
-            ))}
+      <div className="flex flex-row flex-wrap items-center justify-center gap-4">
+        {technologies.map((tech) => (
+          <div className="p-4 doings rounded-lg slide w-20 h-20">
+            <img
+              src={tech.image}
+              alt=""
+            />
           </div>
-          <div className="gap-8 scroll-element secondary">
-            {technologies.map((tech) => (
-              <div className="h-20 w-20 p-4 gap-4 doings rounded-lg">
-                <img
-                  src={tech.image}
-                  alt=""
-                />
-              </div>
-            ))}
-          </div>
-        </div>
+        ))}
+      </div>
+
 
     </div>);
 }
