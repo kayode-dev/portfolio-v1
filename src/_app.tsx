@@ -11,7 +11,7 @@ const MyApp: any = () => {
   return (
     <BrowserRouter>
       <ThemeProvider>
-        <main className=" flex flex-col px-6 lg:px-28 gap-10">
+        <main className=" flex flex-col px-6 lg:px-32 xl:px-60 gap-10">
           <NavBar />
           <Routes>
             <Route index element={<Home />} />

@@ -18,9 +18,9 @@ const Technology = () => {
   return (
     <div className="flex flex-col w-full">
       <h1 className="text-center font-bold text-3xl mb-8">Technologies</h1>
-      <div className="flex flex-row flex-wrap items-center justify-center gap-4">
+      <div className="flex flex-row flex-wrap items-center justify-center gap-6 ">
         {technologies.map((tech) => (
-          <div className="p-4 doings rounded-lg slide w-20 h-20">
+          <div className="p-4 doings rounded-lg slide w-20 h-20 border border-white/10">
             <img
               src={tech.image}
               alt=""

@@ -56,13 +56,10 @@ const WhatIDo = () => {
     >
       What I Do
     </h1>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div className="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-3 gap-12">
       {doings.map((doin) => (
         <Card
-          img={doin.image}
-          heading={doin.heading}
-          summary={doin.summary}
-          scrollClass={doin.scrollClass}
+          props={doin}
         />
       ))}
     </div>

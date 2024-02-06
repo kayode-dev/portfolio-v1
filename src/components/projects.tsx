@@ -1,52 +1,43 @@
 import React from "react";
-import Card from "./UI/Card";
 import ProjectCards from "./UI/project-cards";
 
 const projects: {
-  heading: string;
-  summary: string;
-  liveUrl: string;
-  GithubRepo: string;
-  class: string;
-  tech: any[];
+  image?: string,
+  heading: string,
+  summary: string,
+  liveUrl: string,
+  GithubRepo: string,
+  class: string
 }[] = [
   {
+    image: require("../images/projects/rundwn.png"),
     heading: "RunDwn",
     summary:
-      "A website that utilizes the Spotify API to get users top artist's and tracks over their selected time frame.",
+      "A website that utilizes the Spotify API to fetch users top 10 favorite artist's and tracks over their selected time frame and displays them",
     liveUrl: "https://rundwn.vercel.app",
     GithubRepo: "https://github.com/kayode-dev/wrapped-anytime",
     class:"run-tech",
-    tech: [
-      require("../images/tech/twc.png"),
-      require("../images/tech/rea.png"),
-    ],
+   
   },
   {
+    image: require("../images/projects/rundwn.png"),
     heading: "Kayode-GPT",
     summary:
-      "An AI-chatbot developed using the CHAT-GPT 3.5 turbo API to respond to prompts inputted by the user, also comes with Image Generation capabilities.",
+      "An AI-chatbot developed using the CHAT-GPT 3.5 turbo API to respond to prompts inputted, with Image Generation capabilities.",
     liveUrl: "https://kayode-gpt.vercel.app/",
     GithubRepo: " https://github.com/kayode-dev/kayode-gpt", 
     class:"gpt-tech",
-    tech: [
-      require("../images/tech/twc.png"),
-      require("../images/tech/rea.png"),
-      require("../images/tech/chatgpt.png"),
-    ],
+   
   },
   {
+    image: require("../images/projects/rundwn.png"),
     heading: "Task-manager",
     summary:
-      "A Todo list application where the user can add, remove, update task and mark them as done.",
+      "A Todo list application where the user can add, remove, update task and mark them as done, using the Realtime DB from FIrebase",
     liveUrl: "https://task-manager-eta-six.vercel.app/",
     GithubRepo: "https://github.com/kayode-dev/wrapped-anytime",
     class:"task-tech",
-    tech: [
-      require("../images/tech/twc.png"),
-      require("../images/tech/rea.png"),
-      require("../images/tech/firebase.png"),
-    ],
+   
   },
 ];
 
@@ -55,15 +46,10 @@ const Projects = () => {
     <div id="projects">
       {" "}
       <h1 className="text-center font-bold text-3xl mb-4" id="live-pro">Live Projects</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
         {projects.map((project) => (
           <ProjectCards
-            heading={project.heading}
-            summary={project.summary}
-            liveUrl={project.liveUrl}
-            GithubRepo={project.GithubRepo}
-            tech={project.tech}
-            class={project.class}
+            project={project}
           />
         ))}
       </div>

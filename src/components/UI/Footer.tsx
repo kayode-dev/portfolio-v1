@@ -4,8 +4,8 @@ const Footer = () => {
   const thisyear = new Date().getFullYear();
   return (
     <div className="mt-10 text-lg">
-      <hr className="border-inherit border-gray-500" />
-      <div className="flex my-4 justify-between items-center text-lg text-gray-500">
+      <hr className=" border-gray-500 border-opacity-40 " />
+      <div className="flex my-4 justify-between items-center text-lg text-gray-500 text-opacity-50">
         {" "}
         <p>&copy; kayode.dev {thisyear}</p>
         <div className="flex gap-4 justify-around">
@@ -28,7 +28,7 @@ const Footer = () => {
             rel="noreferrer"
             href="https://twitter.com/kayode_txt"
           >
-            <i className="fa-brands fa-twitter"></i>
+            <i className="fa-brands fa-x-twitter"></i>
           </a>
           <a
             target="_blank"

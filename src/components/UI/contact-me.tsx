@@ -45,7 +45,7 @@ const ContactMe = () => {
                 rel="noreferrer"
                 href="https://twitter.com/kayode_txt"
             >
-                <i className="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-x-twitter"></i>
             </a>
 
             <a

@@ -12,7 +12,7 @@ const Intro = () => {
         <p className="font-medium text-lg mb-2 description">
           Front-end Developer / Project Manager👨🏾‍💻
         </p>
-        <p className="font-medium text-lg text-green-800 intro">
+        <p className="font-medium text-base text-green-800 intro">
           Hello! Im Kayode, a Front-end developer who loves implementing
           web-designs, meeting clients expectations and can easily center my{" "}
           <code>div</code>'s. I enjoy some of the challenges that come with
