@@ -20,7 +20,7 @@ const projects: {
    
   },
   {
-    image: require("../images/projects/rundwn.png"),
+    image: require("../images/projects/kayGPT.png"),
     heading: "Kayode-GPT",
     summary:
       "An AI-chatbot developed using the CHAT-GPT 3.5 turbo API to respond to prompts inputted, with Image Generation capabilities.",
@@ -30,12 +30,12 @@ const projects: {
    
   },
   {
-    image: require("../images/projects/rundwn.png"),
+    image: require("../images/projects/task.png"),
     heading: "Task-manager",
     summary:
       "A Todo list application where the user can add, remove, update task and mark them as done, using the Realtime DB from FIrebase",
     liveUrl: "https://task-manager-eta-six.vercel.app/",
-    GithubRepo: "https://github.com/kayode-dev/wrapped-anytime",
+    GithubRepo: "https://github.com/kayode-dev/task-manager",
     class:"task-tech",
    
   },
