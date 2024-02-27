@@ -56,7 +56,7 @@ const WhatIDo = () => {
     >
       What I Do
     </h1>
-    <div className="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-3 gap-12">
+    <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-12">
       {doings.map((doin) => (
         <Card
           props={doin}

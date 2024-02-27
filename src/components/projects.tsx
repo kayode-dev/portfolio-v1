@@ -24,8 +24,8 @@ const projects: {
     heading: "Kayode-GPT",
     summary:
       "An AI-chatbot developed using the CHAT-GPT 3.5 turbo API to respond to prompts inputted, with Image Generation capabilities.",
-    liveUrl: "https://kayode-gpt.vercel.app/",
-    GithubRepo: " https://github.com/kayode-dev/kayode-gpt", 
+    liveUrl: "https://kay-gpt.vercel.app/",
+    GithubRepo: " https://github.com/kayode-dev/kayode-gpt-2", 
     class:"gpt-tech",
    
   },
