@@ -43,7 +43,7 @@ const projects: {
       "A simple Tic-tac-toe game using a 2D Array, determines who wins or if its a draw and displays the outcome in via the browers alert system",
     liveUrl: "https://tic-tac-toe-phi-taupe.vercel.app/",
     GithubRepo: "https://github.com/kayode-dev/tic-tac-toe",
-    class: "run-tech",
+    class: "tic-tech",
   },
 ];
 
