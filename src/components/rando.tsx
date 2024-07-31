@@ -1,5 +1,5 @@
 import React from "react";
-import Resume from "../documents/resume1.pdf";
+import Resume from "../documents/resume2.pdf";
 
 const Rando = () => {
   return (

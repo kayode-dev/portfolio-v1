@@ -1,8 +1,21 @@
 import React from "react";
 
-const ProjectCards = ({ project }: { project: { image?: string, class: string, heading: string, summary: string, liveUrl: string, GithubRepo: string } }) => {
+const ProjectCards = ({
+  project,
+}: {
+  project: {
+    image?: string;
+    class: string;
+    heading: string;
+    summary: string;
+    liveUrl: string;
+    GithubRepo: string;
+  };
+}) => {
   return (
-    <div className={`w-full grid place-items-start rounded-2xl doings border border-white/20 overflow-hidden ${project.class}`}>
+    <div
+      className={`w-full grid place-items-start rounded-2xl doings border border-white/20 overflow-hidden ${project.class}`}
+    >
       <div className="h-full w-full rounded-t-2xl">
         <img
           src={project.image}
@@ -19,8 +32,7 @@ const ProjectCards = ({ project }: { project: { image?: string, class: string, h
           <p className="text-green-800 text-sm">{project.summary}</p>
         </div>
         <div className="self-start flex items-center gap-8 text-sm">
-          <a href={project.liveUrl} target="_blank"
-            rel="noreferrer">
+          <a href={project.liveUrl} target="_blank" rel="noreferrer">
             <button className=" p-2 rounded-lg bg-green-800 text-white hover:scale-105 duration-500">
               Live Preview
               <span className="material-symbols-outlined text-sm">
@@ -28,8 +40,7 @@ const ProjectCards = ({ project }: { project: { image?: string, class: string, h
               </span>
             </button>
           </a>
-          <a href={project.GithubRepo} target="_blank"
-            rel="noreferrer">
+          <a href={project.GithubRepo} target="_blank" rel="noreferrer">
             <button className=" p-2 rounded-lg bg-green-800 text-white hover:scale-105  duration-500">
               Github <i className="fa-brands fa-github"></i>
             </button>
